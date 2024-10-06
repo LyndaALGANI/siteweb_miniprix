@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Mr+Dafoe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.header a.active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.header-right {
+    float: right;
+}
+
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .header-right {
+        float: none;
+    }
+}
+
+.tete {
+    width: 100%;
+    background-color: #fff;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 40px;
+    margin-top: ;
+}
+
+.social {
+    display: flex;
+    margin-left: 150px;
+    background-color: #fff;
+}
+
+.social p {
+    margin-right: 15px;
+    border: 1px solid #90ee90;
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+}
+
+.login_register_bt {
+    display: flex;
+    margin-right: 150px;
+}
+
+.login_register_bt a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #90ee90;
+    transition: 1s;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 90px;
+    border-bottom: 5px solid #fff;
+}
+
+
+
+nav>h1 {
+    margin-right: 30px;
+    font-family: 'Grand Hotel', cursive;
+}
+
+nav .barre ul {
+    display: flex;
+    font-size: 17px;
+    list-style: none;
+}
+
+nav .barre li {
+    margin-left: 12px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+nav .barre li a {
+    text-decoration: none;
+    color: #90ee90;
+    transition: 1s;
+}
+
+nav .barre li :hover {
+    color: lightgrey;
+    border-radius: 20px;
+    padding: 10px;
+    transform: rotate(360deg);
+}
+
+.barre input {
+    border-radius: 30px;
+    margin: -8px;
+    margin-right: 150px;
+    padding: 10px;
+    border: none;
+    background-color: #fcfcfc;
+    outline: none;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+#slide img {
+    width: 100%;
+}
+
+.slider img {
+    display: inline-block;
+    width: 100%;
+    height: 90%;
+}
+
+.slider a {
+    position: absolute;
+    cursor: pointer;
+    font-size: 100px;
+    padding: 10px;
+    display: inline-block;
+    top: 40%;
+    border-radius: 30%;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    color: white;
+    background: #000;
+}
+
+.slider a:hover,
+.dot:hover {
+    opacity: 0.5;
+}
+
+.prev {
+    left: 5%;
+}
+
+.next {
+    right: 5%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-top: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: 696B6C;
+    opacity: 0.5;
+    transition: background-color 0.6s ease;
+}
+
+.main {
+    margin: 20px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Toutes les cartes */
+
+.row {
+    width: 100%;
+    justify-content: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .product, .product--pink, .product--yellow, .product--green, .product--red, .product--orange, .product--blue {
+    box-shadow: 1px 5px 15px #CCC;
+    width: 15em;
+    height: auto;
+    border-radius: 3px;
+    padding: 2em;
+    margin: 1em;
+    overflow: hidden;
+    position: relative;
+    flex: auto;
+  }
+  .product--blue {
+    background: linear-gradient(-45deg, #92DCE5 50%, rgba(255, 255, 255, 0.5) 50%);
+  }
+ 
+  .product img, .product--blue img, .product--orange img, .product--red img, .product--green img, .product--yellow img, .product--pink img {
+    max-width: 100%;
+    height: auto !important;
+    text-align: center;
+  }
+  .product_inner {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  .product_inner p {
+    color: black;
+    font-weight: 700;
+  }
+  .product_inner button {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #FFF;
+    border-radius: 3px;
+    padding: 1em 3em;
+    margin: 1em 0 0 0;
+    background: none;
+    cursor: pointer;
+    transition: background ease-in 0.25s;
+  }
+  .product_inner button:hover {
+    background: white;
+    color: #2B2D42;
+  }
+  .product_inner button:before {
+    font-family: FontAwesome;
+    content: "";
+    color: #FFF;
+    position: absolute;
+    font-size: 1.5em;
+    margin: 0 -1.5em;
+  }
+  .product_inner button:hover:before {
+    color: #2B2D42;
+  }
+  .product_overlay {
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-500px);
+    opacity: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .product_overlay h2 {
+    color: rgba(43, 45, 66, 0.7);
+    font-size: 1.2em;
+    margin: 1em 0;
+  }
+  .product_overlay i {
+    color: rgba(43, 45, 66, 0.7);
+    font-size: 1.5em;
+  }
+
+
+/* Fin de toutes les cartes */
+
+/* Fin de la section principale */
+
+
+/* Pied de page */
+
+footer {
+    margin-top: 100px;
+    background-color: #f1f1f1;
+    padding: 30px;
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .social-media {
+    display: flex;
+}
+
+footer .social-media p {
+    margin-right: 15px;
+    border: 1px solid #90ee90;
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+/* Fin du pied de page */
+
+@media screen and (max-width: 640px) {
+    nav .onglets .link,
+    nav h1 {
+        display: none;
+    }
+    .cards .card img {
+        width: 300px;
+    }
+}

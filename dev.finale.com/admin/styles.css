@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+body{
+    font-family: 'open Sans', sans-serif ;
+    margin: auto;
+    background-image: url("bois.jpg");
+}
+.site{
+    font-family: 'Hollywood One SC', sans-serif;
+}
+.container h1{
+    font-size: 60px;
+    max-width: 800px;
+    text-align: center;
+    margin-left: 210px;
+    color:#fff  ;
+
+}
+.container span{
+    color:#198754 ;
+    font-size: 60px ;
+    animation: flash 2s linear infinite;
+
+}
+nav span{
+    color:#198754 ;
+    font-size: 30px;
+    animation: flash 2s linear infinite;
+    }
+    @keyframes flash {
+0%{
+    color: #198754;
+    text-shadow: none;
+}
+100%{
+    color: #a3dfab;
+    text-shadow: 0 0 7px #f3f3bb, 0 0 50px #ff6c00;
+}
+    }
+.container .admin 
+{
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+} 
+.container .admin .row h2 {
+    color:rgb(9, 9, 9);
+
+}
+.admin{
+  background: #fff;
+  padding:50px;
+  border-radius:10px;
+  max-width: 1000px;
+}
+.help-inline{
+    color:red;
+}
+.thumbnail img{
+    max-height: 400px;
+}
+.caption{
+    font-family: 'Hollywood One SC', sans-serif;
+}
+

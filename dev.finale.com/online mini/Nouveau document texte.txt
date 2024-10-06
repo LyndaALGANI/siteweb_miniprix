@@ -1,0 +1,15 @@
+okr(objectives and key results)
+LA METHOD SCRUM:
+BACKLOG 
+En tant que clinet je voudrais: login 1j;
+En tant que clinet je voudrais: achter un produit 3j;
+En tant que clinet je voudrais: discuter avec l'admin
+-----------------------------------------------------depot
+En tant que clinet je voudrais: 
+En tant que clinet je voudrais: 
+
+SPRINT
+PROJECT OWNER(Riyadh)
+sprint
+Scrun master=chef de projet 
+
